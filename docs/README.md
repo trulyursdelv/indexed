@@ -27,7 +27,7 @@ This is required to prevent colliding with databases that Indexed didn't made.
 To delete a database, use the method `delete` with your database name.
 
 > [!IMPORTANT]
-> This method does not undergo the criteria, which means even databases that Indexed didn't made could also be deleted.
+> This method does not undergo a criteria, which means even databases that Indexed didn't made could also be deleted.
 
 ```javascript
 await Indexed.delete("my-database");
