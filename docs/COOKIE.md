@@ -33,13 +33,13 @@ Indexed.remove("foo");
 
 ### :link: Synchronize a data
 
-To synchronize a data from the database into a cookie, use the `sync` method, with your database key, and optionally, alias name.
+To synchronize a data from a database into a cookie, use the method `sync` with your key, and optionally, alias name.
 
 ```javascript
 const index = await Indexed.open("my-database");
 
-// This will sync "foo" into a cookie named "foo-cookie"
-await index.sync("foo", "foo-cookie");
+// Sync the data "foo" into a cookie named "foo-cookie"
+index.cookie.sync("foo", "foo-cookie");
 ```
 
 > [!NOTE]
