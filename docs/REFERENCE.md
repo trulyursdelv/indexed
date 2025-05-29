@@ -76,7 +76,7 @@ const ref = Indexed.reference({
 ref.remove("foo/bar");
 ```
 
-Manual deletion only happens if the path is `/`. If it does, you need manually delete that object.
+Manual deletion only happens if the path is `/`. If it does, you need to manually delete that object.
 
 Here's an example of how to do manual deletion:
 
