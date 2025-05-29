@@ -18,7 +18,7 @@ ref.set("auth/organization/name", "Bar Studio");
 
 #### :rotating_light: Take Note
 
-Reference is a high-level utility class. Therefore, it doesn't support automatic actions especially in removing data and processing keys.
+Reference is a top-level utility class. Therefore, it doesn't support automatic actions especially in removing data and processing keys.
 
 To prevent incorrect mutation, always convert an empty keys into a root path (`/`). For example, `set("", 1)` should be `set("/", 1)`.
 
