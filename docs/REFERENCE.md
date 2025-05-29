@@ -22,7 +22,7 @@ Reference is a high-level utility class. Therefore, it doesn't support automatic
 
 To prevent incorrect mutation, always convert an empty keys into a root path (`/`). For example, `set("", 1)` should be `set("/", 1)`.
 
-Additionally, to properly delete a data, you need to do some [further steps](#deleting-a-data).
+Additionally, to properly delete a data, you need to do some [further steps](#wastebasket-deleting-a-data).
 
 ### :package: Creating a new reference
 
