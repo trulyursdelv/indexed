@@ -48,12 +48,12 @@ class Reference {
   /**
    * Reference cannot handle the database directly. Therefore, when using remove, manual deletion to the data is required.
    * 
-   * This method returns a boolean whether the removal was successful or needs manual deletion.
+   * This method returns a boolean whether the data needs manual deletion.
    * 
    * For an instance, if this method returns false, using Database.#delete is needed.
    */
   remove(path) {
-    if(path == "/") return false;
+    if(path == "/") return true;
     
     const parts = path.trim().split("/");
     const target = parts.pop();
@@ -63,7 +63,7 @@ class Reference {
       ref = ref[key];
     }
     delete ref[target];
-    return true;
+    return false;
   }
 }
 
