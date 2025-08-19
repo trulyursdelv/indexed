@@ -140,7 +140,7 @@ class Indexed {
   }
 }
 
-Indexed.prototype.Database = Database;
+Indexed.Database = Database;
 window.Indexed = Indexed;
 
 })();
